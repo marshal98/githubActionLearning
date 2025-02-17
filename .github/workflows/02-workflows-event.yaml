@@ -1,4 +1,4 @@
-name: 01-Building Blocks
+name: 02-Workflow-event
 
 on:
   push:
