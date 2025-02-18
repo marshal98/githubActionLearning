@@ -1,4 +1,4 @@
-name: 03-Workflow-runner
+name: 04-using-action
 
 on:
   push:
@@ -12,7 +12,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Printing Folders
-        run: ls
+        run: |
+          pwd
+          ls
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+
+      - name: Install Dependencies
+        working-directory: 04-using-action/react-app
+        run: npm ci
+       
 
     # 0. Checkout the code from the repository
     # 1. Install deps of react application 
