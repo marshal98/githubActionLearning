@@ -1,9 +1,7 @@
 name: 03-Workflow-runner
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   Ubuntu-echo:
