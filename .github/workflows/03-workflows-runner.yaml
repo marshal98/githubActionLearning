@@ -9,8 +9,16 @@ jobs:
   Ubuntu-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: Show the trigger
+      - name: Show OS
         run: |
           echo "This job is rinning on an Ubuntu runner."
+          echo "Runner OS: $RUNNER_OS"
+          
+  Windows-echo:
+    runs-on: Windows-latest
+    steps:
+      - name: Show OS
+        run: |
+          echo "This job is rinning on an Windows runner."
           echo "Runner OS: $RUNNER_OS"
 
