@@ -1,11 +1,16 @@
 name: 06-Event_Filter and Activity_Types
-run-name: My Custom workflow run name - ${{runner.os}}
+run-name: 06-Event_Filter and Activity_Types | Debug - ${{inputs.debug}}
 
 on:
     push:
       branches:
         - main
     workflow_dispatch:
+        inputs:
+            debug:
+                type: boolean
+                default: false
+
 
 jobs:
     echo:
