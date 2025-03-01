@@ -1,4 +1,4 @@
-name: 08-Using Variables.
+name: 10-Execution-flow.
 
 on:
     workflow_dispatch:
