@@ -11,12 +11,12 @@ on:
         description: Which environment to target for dependency installation
         type: choice
         options:
-          - dev
-          - prod
+          - Dev
+          - Prod
 
 env:
   working-directory: react-app
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
