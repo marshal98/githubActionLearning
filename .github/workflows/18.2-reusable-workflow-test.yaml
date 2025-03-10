@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: somejob
     steps:
-        - name: Print outputs
+        - name: Print output
           run: |
             echo "Build status: ${{needs.deploy.build-status}}"
             echo "URL: ${{needs.deploy.url}}" 
