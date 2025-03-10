@@ -5,7 +5,7 @@ on:
 
 jobs:
   somejob:
-    uses: ./.github/workflows/18.1-reusable-workflows.yaml
+    uses: ./.github/workflows/18.2-reusable-workflow-test.yaml
     with:
         target-directory: dummy-dir
 
